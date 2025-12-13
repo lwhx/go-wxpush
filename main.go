@@ -175,7 +175,7 @@ func handleWxSend(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if params.BaseURL == "" {
-		params.BaseURL = "https://hzz.cool"
+		params.BaseURL = "https://push.hzz.cool"
 	}
 	if params.Content == "" {
 		params.Content = "测试内容"

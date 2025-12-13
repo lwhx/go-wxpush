@@ -12,7 +12,8 @@
 ✅ 每天 10 万次额度，个人用不完  
 ✅ 真正的微信原生弹窗 + 声音提醒  
 ✅ 支持多用户  
-✅ 跳转稳定，自带消息详情页面 (默认使用[https://hzz.cool/detail/](https://hzz.cool/detail/), 可自己部署后使用参数替换)  
+✅ 提供免费服务[https://push.hzz.cool](https://push.hzz.cool)（请勿滥用）  
+✅ 跳转稳定，自带消息详情页面 (默认使用[https://push.hzz.cool/detail/](https://push.hzz.cool/detail/), 可自己部署后使用参数替换)  
 ✅ 可无限换皮肤 (使用项目[wxpushSkin](https://github.com/frankiejun/wxpushSkin))
 
 ## ⚠️ 部署条件
@@ -45,7 +46,7 @@ gox -osarch="linux/amd64" -ldflags "-s -w" -gcflags="all=-trimpath=${PWD}" -asmf
 
 ## 🗭 默认消息详情页
 
-服务启动成功后会自带消息详情页界面(即消息模板跳转的页面)，访问地址 `http://127.0.0.1:5566/detail` ，如有公网地址，可设置base_url参数为对应的地址即可。
+服务启动成功后会自带消息详情页界面(即消息模板跳转的页面)，访问地址 `http://127.0.0.1:5566/detail` ，如有公网地址，可设置base_url参数为对应的host即可(无需加/detail)。
 ![wx3.png](img/msg.png)
 
 ## ⚙️ API 使用方法
@@ -149,3 +150,5 @@ curl --location --request POST 'http://127.0.0.1:5566/wxsend' \
 ## 📜 许可证
 
 本项目采用 [MIT License](./LICENSE.txt) 开源许可证。
+
+推荐搭配：Windows crontab
