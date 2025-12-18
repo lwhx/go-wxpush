@@ -46,7 +46,7 @@ gox -osarch="darwin/amd64" -ldflags "-s -w" -gcflags="all=-trimpath=${PWD}" -asm
 gox -osarch="linux/amd64" -ldflags "-s -w" -gcflags="all=-trimpath=${PWD}" -asmflags="all=-trimpath=${PWD}"
 ```
 
-### Docker 启动
+### 🐳 Docker 启动
 - 将编译好的文件放在与 Dockerfile 同目录
 - 构建镜像
 ```
