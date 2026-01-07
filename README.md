@@ -52,7 +52,7 @@ gox -osarch="linux/arm64" -ldflags "-s -w" -gcflags="all=-trimpath=${PWD}" -asmf
 - 将编译好的文件放在与 Dockerfile 同目录
 - 构建镜像
 ```
-docker build -t go-wxpush:v4 .
+docker build -t go-wxpush:v2 .
 ```
 - 启动镜像，参数与命令行保持一致
 ```
